@@ -1,0 +1,112 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Skrifttype og størrelse */
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.5rem;}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+/*Farvel på teksten*/
+
+h1 {  color: rgb(249, 249, 249);
+  font-size: 4rem;      /* Makes the h1 much larger */
+  font-weight: bold;    /* Makes the text bold */
+  text-align: center;   /* Centers the text */
+  letter-spacing: 2px;  /* Adds spacing between letters */
+  margin-bottom: 0.5em; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+h2 {color:darkslategrey}
+
+p {color:indigo}
+
+/* Billeder i 100% */
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+
+#topNav {background-color: black;
+color: rgb(253, 253, 253);
+}
+
+#topNav a {color: aliceblue;
+}
+
+#topNav a:hover {color: blueviolet;
+
+}
+
+#topNav {display: flex; align-items: center; gap: 20px;
+} /* Space between logo and links */
+#topNav img {width: auto; height: 40px;
+} /* Limit logo size in navigation */
+/* hero sektionen styles */
+
+header{ height: 50vh;
+  background-color: brown;
+  background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center;
+
+  /* læg teksten i midten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Responsive design */
+
+/* Mobile enheder */
+@media (max-width: 600px) {
+  body {background-color: rgb(178, 143, 79);
+  }
+#stemning {display: block;
+}
+}
+
+
+/* Tablets, ipads etc */
+@media (min-width: 601px) and (max-width: 1024px) 
+{ 
+body {background-color: blueviolet;
+}
+#stemning {display: block;
+}
+}
